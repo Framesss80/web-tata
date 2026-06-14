@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tu empresa de confianza. Ofrecemos soluciones profesionales de alta calidad para impulsar tu negocio al siguiente nivel." />
+  <meta name="keywords" content="empresa, servicios, profesional, calidad, negocio" />
+  <meta name="author" content="Tu Empresa" />
+  <meta property="og:title" content="Tu Empresa — Soluciones Profesionales" />
+  <meta property="og:description" content="Ofrecemos soluciones profesionales de alta calidad para impulsar tu negocio." />
+  <meta property="og:type" content="website" />
+  <title>Tu Empresa — Soluciones Profesionales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Tu<strong>Empresa</strong></span>
+      </a>
+      <nav class="nav-links" id="nav-links" role="navigation" aria-label="Menú principal">
+        <a href="#servicios" id="nav-servicios">Servicios</a>
+        <a href="#nosotros" id="nav-nosotros">Nosotros</a>
+        <a href="#testimonios" id="nav-testimonios">Testimonios</a>
+        <a href="#contacto" id="nav-contacto">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn btn-primary nav-cta" id="nav-cta-btn">Empieza ahora</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        Abierto y disponible para nuevos proyectos
+      </div>
+      <h1 class="hero-title">
+        Soluciones que<br />
+        <span class="gradient-text">transforman</span><br />
+        tu negocio
+      </h1>
+      <p class="hero-subtitle">
+        Combinamos estrategia, creatividad y tecnología para llevar tu empresa
+        al siguiente nivel. Resultados reales, metodología probada.
+      </p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary btn-lg" id="hero-cta-btn">
+          Contacta con nosotros
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#servicios" class="btn btn-ghost btn-lg" id="hero-services-btn">
+          Ver servicios
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="250">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Clientes felices</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Satisfacción</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="8">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" id="scroll-indicator">
+      <span>Desplázate</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== LOGOS / CONFIANZA ===== -->
+  <section class="trust-section" id="trust">
+    <div class="container">
+      <p class="trust-label">Empresas que confían en nosotros</p>
+      <div class="trust-logos">
+        <span class="trust-logo">Acme Corp</span>
+        <span class="trust-logo">Nexus Ltd</span>
+        <span class="trust-logo">Vertex Co</span>
+        <span class="trust-logo">Orbit Inc</span>
+        <span class="trust-logo">Pulse Group</span>
+        <span class="trust-logo">Nova Studio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="section services-section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Servicios</div>
+        <h2 class="section-title">Todo lo que necesitas<br /><span class="gradient-text">en un solo lugar</span></h2>
+        <p class="section-subtitle">Ofrecemos una gama completa de servicios diseñados para hacer crecer tu negocio de forma sostenible y eficiente.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" id="service-1">
+          <div class="service-icon">💡</div>
+          <h3>Estrategia & Consultoría</h3>
+          <p>Analizamos tu negocio en profundidad y diseñamos una hoja de ruta personalizada para alcanzar tus objetivos.</p>
+          <ul class="service-features">
+            <li>Auditoría completa</li>
+            <li>Plan de acción detallado</li>
+            <li>KPIs y métricas</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-link-1">Saber más →</a>
+        </div>
+        <div class="service-card featured" id="service-2">
+          <div class="service-badge">Más popular</div>
+          <div class="service-icon">🚀</div>
+          <h3>Marketing Digital</h3>
+          <p>Campañas orientadas a resultados que maximizan tu retorno de inversión y aumentan tu presencia online.</p>
+          <ul class="service-features">
+            <li>SEO & SEM avanzado</li>
+            <li>Redes sociales</li>
+            <li>Email marketing</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-link-2">Saber más →</a>
+        </div>
+        <div class="service-card" id="service-3">
+          <div class="service-icon">🎨</div>
+          <h3>Diseño & Branding</h3>
+          <p>Creamos identidades visuales únicas que conectan emocionalmente con tu audiencia y destacan frente a la competencia.</p>
+          <ul class="service-features">
+            <li>Identidad corporativa</li>
+            <li>Diseño web & UI/UX</li>
+            <li>Material gráfico</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-link-3">Saber más →</a>
+        </div>
+        <div class="service-card" id="service-4">
+          <div class="service-icon">⚙️</div>
+          <h3>Desarrollo Tecnológico</h3>
+          <p>Soluciones digitales a medida: desde webs y aplicaciones hasta automatizaciones que ahorran tiempo y dinero.</p>
+          <ul class="service-features">
+            <li>Webs & e-commerce</li>
+            <li>Apps a medida</li>
+            <li>Automatizaciones</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-link-4">Saber más →</a>
+        </div>
+        <div class="service-card" id="service-5">
+          <div class="service-icon">📊</div>
+          <h3>Analítica & Datos</h3>
+          <p>Convertimos los datos de tu empresa en insights accionables para tomar decisiones más inteligentes.</p>
+          <ul class="service-features">
+            <li>Dashboards en tiempo real</li>
+            <li>Informes periódicos</li>
+            <li>Business Intelligence</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-link-5">Saber más →</a>
+        </div>
+        <div class="service-card" id="service-6">
+          <div class="service-icon">🛡️</div>
+          <h3>Soporte & Mantenimiento</h3>
+          <p>Acompañamiento continuo para que tu negocio funcione sin interrupciones, con soporte prioritario 24/7.</p>
+          <ul class="service-features">
+            <li>Soporte prioritario</li>
+            <li>Actualizaciones continuas</li>
+            <li>Monitorización activa</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-link-6">Saber más →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="section about-section" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-image-wrapper">
+          <div class="about-image-placeholder">
+            <div class="about-img-inner">
+              <span class="about-img-icon">🏢</span>
+              <p>Tu equipo aquí</p>
+            </div>
+          </div>
+          <div class="about-floating-card card-1">
+            <span class="card-icon">⭐</span>
+            <div>
+              <strong>4.9/5</strong>
+              <small>Valoración media</small>
+            </div>
+          </div>
+          <div class="about-floating-card card-2">
+            <span class="card-icon">🎯</span>
+            <div>
+              <strong>+250</strong>
+              <small>Proyectos entregados</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-tag">Nosotros</div>
+        <h2 class="section-title">Un equipo apasionado por los <span class="gradient-text">resultados</span></h2>
+        <p class="about-text">Somos un equipo multidisciplinar con más de 8 años de experiencia ayudando a empresas de todos los tamaños a crecer y diferenciarse en el mercado.</p>
+        <p class="about-text">Nuestra metodología combina análisis riguroso, creatividad desbordante y ejecución impecable para entregar resultados que superan las expectativas.</p>
+        <div class="about-values">
+          <div class="value-item">
+            <span class="value-icon">✓</span>
+            <div>
+              <strong>Transparencia total</strong>
+              <p>Comunicación clara en cada paso del proyecto.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">✓</span>
+            <div>
+              <strong>Orientados a resultados</strong>
+              <p>Medimos todo y optimizamos sin cesar.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">✓</span>
+            <div>
+              <strong>Equipo dedicado</strong>
+              <p>Un interlocutor único para cada cliente.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contacto" class="btn btn-primary" id="about-cta-btn">Trabaja con nosotros →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIOS ===== -->
+  <section class="section testimonials-section" id="testimonios">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Testimonios</div>
+        <h2 class="section-title">Lo que dicen<br /><span class="gradient-text">nuestros clientes</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" id="testimonial-1">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Trabajar con este equipo ha sido una de las mejores decisiones para nuestro negocio. En 6 meses triplicamos nuestras ventas online."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">MG</div>
+            <div>
+              <strong>María García</strong>
+              <span>CEO, Boutique Moda Online</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured" id="testimonial-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Profesionalidad, rapidez y resultados. El equipo entendió nuestra visión desde el primer momento y la ejecutó a la perfección."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">JR</div>
+            <div>
+              <strong>Juan Rodríguez</strong>
+              <span>Director, Constructora JR</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="testimonial-3">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"El ROI fue visible desde el primer mes. Nunca pensé que una inversión en marketing digital pudiera dar frutos tan rápidos."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">AL</div>
+            <div>
+              <strong>Ana López</strong>
+              <span>Fundadora, Clínica Bienestar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner" id="cta-banner">
+    <div class="cta-bg">
+      <div class="cta-orb cta-orb-1"></div>
+      <div class="cta-orb cta-orb-2"></div>
+    </div>
+    <div class="container cta-content">
+      <h2>¿Listo para llevar tu negocio<br /><span class="gradient-text-light">al siguiente nivel?</span></h2>
+      <p>Agenda una consulta gratuita de 30 minutos y descubre cómo podemos ayudarte.</p>
+      <a href="#contacto" class="btn btn-white btn-lg" id="banner-cta-btn">
+        Agenda tu consulta gratis
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="section contact-section" id="contacto">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <div class="section-tag">Contacto</div>
+        <h2 class="section-title">Hablemos de<br /><span class="gradient-text">tu proyecto</span></h2>
+        <p class="contact-subtitle">Cuéntanos en qué podemos ayudarte y te responderemos en menos de 24 horas.</p>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <span class="detail-icon">📍</span>
+            <div>
+              <strong>Dirección</strong>
+              <span>Calle Principal 123, Madrid, España</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="detail-icon">📞</span>
+            <div>
+              <strong>Teléfono</strong>
+              <span>+34 91 234 56 78</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="detail-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <span>hola@tuempresa.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn" id="social-linkedin" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-btn" id="social-instagram" aria-label="Instagram">ig</a>
+          <a href="#" class="social-btn" id="social-twitter" aria-label="Twitter/X">𝕏</a>
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Tu empresa" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio">
+              <option value="">Selecciona un servicio</option>
+              <option value="estrategia">Estrategia & Consultoría</option>
+              <option value="marketing">Marketing Digital</option>
+              <option value="diseño">Diseño & Branding</option>
+              <option value="desarrollo">Desarrollo Tecnológico</option>
+              <option value="analitica">Analítica & Datos</option>
+              <option value="soporte">Soporte & Mantenimiento</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            Enviar mensaje
+            <span class="btn-arrow">→</span>
+          </button>
+          <div class="form-success" id="form-success" role="alert" aria-live="polite">
+            ✅ ¡Mensaje enviado! Te contactaremos pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">Tu<strong>Empresa</strong></span>
+        </a>
+        <p>Transformamos negocios con estrategia, creatividad y tecnología.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <a href="#servicios">Estrategia</a>
+          <a href="#servicios">Marketing</a>
+          <a href="#servicios">Diseño</a>
+          <a href="#servicios">Desarrollo</a>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#testimonios">Clientes</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 TuEmpresa. Todos los derechos reservados.</span>
+        <span>Hecho con ❤️ en España</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
