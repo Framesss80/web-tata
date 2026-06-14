@@ -1,5 +1,6 @@
 /* ============================================
-   main.js — Landing Page Interactivity
+   main.js — Momentos con Encanto
+   Interactividad de la landing page
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -33,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── 3. SCROLL REVEAL animation ───────────────
   const revealEls = document.querySelectorAll(
-    '.service-card, .testimonial-card, .about-content, .about-visual, ' +
+    '.service-card, .testimonial-card, .gallery-item, ' +
+    '.about-content, .about-visual, ' +
     '.contact-info, .contact-form-wrapper, .trust-logo, .stat-item'
   );
 
