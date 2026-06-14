@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
   revealEls.forEach(el => revealObserver.observe(el));
 
   // ── 4. COUNTER animation (stats) ─────────────
-  const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+  const statNumbers = document.querySelectorAll('[data-target]');
 
   const animateCounter = (el) => {
     const target = parseInt(el.dataset.target, 10);

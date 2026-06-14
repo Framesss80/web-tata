@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Momentos con Encanto — Decoración de eventos y detalles artesanales personalizados para bodas, bautizos, comuniones y todo tipo de celebraciones." />
-  <meta name="keywords" content="decoración eventos, detalles artesanales, bodas, bautizos, comuniones, regalos personalizados, eventos" />
+  <meta name="description" content="Momentos con Encanto — Decoración artesanal y detalles personalizados para bodas, bautizos, comuniones y toda clase de celebraciones especiales." />
+  <meta name="keywords" content="decoración eventos, detalles artesanales, bodas, bautizos, comuniones, regalos personalizados, minimalista, natural" />
   <meta name="author" content="Momentos con Encanto" />
-  <meta property="og:title" content="Momentos con Encanto — Decoración y Detalles Artesanales" />
-  <meta property="og:description" content="Convertimos cada celebración en un recuerdo único con decoración artesanal y detalles personalizados para los invitados." />
+  <meta property="og:title" content="Momentos con Encanto — Decoración Artesanal" />
+  <meta property="og:description" content="Detalles artesanales y decoración personalizada para que cada celebración sea un recuerdo imborrable." />
   <meta property="og:type" content="website" />
-  <title>Momentos con Encanto — Decoración y Detalles Artesanales</title>
+  <title>Momentos con Encanto — Decoración Artesanal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,8 +21,11 @@
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
       <a href="#" class="logo" id="logo-link">
-        <span class="logo-icon">✿</span>
-        <span class="logo-text">Momentos <strong>con Encanto</strong></span>
+        <div class="logo-text-wrap">
+          <span class="logo-top">Momentos</span>
+          <div class="logo-dot">con</div>
+          <span class="logo-bottom">Encanto</span>
+        </div>
       </a>
       <nav class="nav-links" id="nav-links" role="navigation" aria-label="Menú principal">
         <a href="#servicios" id="nav-servicios">Servicios</a>
@@ -31,7 +34,7 @@
         <a href="#testimonios" id="nav-testimonios">Testimonios</a>
         <a href="#contacto" id="nav-contacto">Contacto</a>
       </nav>
-      <a href="#contacto" class="btn btn-primary nav-cta" id="nav-cta-btn">Pide tu presupuesto</a>
+      <a href="#contacto" class="btn btn-primary nav-cta" id="nav-cta-btn">Pide presupuesto</a>
       <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -41,61 +44,71 @@
   <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <div class="hero-orb hero-orb-1"></div>
-      <div class="hero-orb hero-orb-2"></div>
-      <div class="hero-orb hero-orb-3"></div>
-      <div class="hero-petals">
-        <span class="petal">✿</span>
-        <span class="petal">❀</span>
-        <span class="petal">✾</span>
-        <span class="petal">✿</span>
-        <span class="petal">❀</span>
-        <span class="petal">✾</span>
-        <span class="petal">✿</span>
-        <span class="petal">❀</span>
+      <div class="hero-circle hero-circle-1"></div>
+      <div class="hero-circle hero-circle-2"></div>
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-blob hero-blob-3"></div>
+      <div class="hero-sparkles">
+        <span class="sparkle">✦</span>
+        <span class="sparkle">✦</span>
+        <span class="sparkle">✧</span>
+        <span class="sparkle">✦</span>
+        <span class="sparkle">✧</span>
       </div>
     </div>
+
+    <div class="hero-botanical" aria-hidden="true">
+      <div class="botanical-art">🌿</div>
+    </div>
+
     <div class="container hero-content">
-      <div class="hero-badge" id="hero-badge">
-        <span class="badge-dot"></span>
-        Aceptando reservas para 2025 · 2026
+      <div class="hero-eyebrow" id="hero-badge">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Taller artesanal · Desde 2018</span>
       </div>
+
       <h1 class="hero-title">
         Cada celebración<br />
         merece ser<br />
-        <span class="gradient-text">inolvidable</span>
+        <em>inolvidable</em>
       </h1>
+
       <p class="hero-subtitle">
-        Creamos decoraciones únicas y detalles artesanales personalizados para que
-        tus invitados lleven un trozo de magia a casa. Bodas, bautizos, comuniones
-        y mucho más.
+        Creamos detalles artesanales únicos y decoraciones a medida para
+        que tus invitados lleven un trozo de magia a casa.
       </p>
+
+      <div class="hero-divider"></div>
+
       <div class="hero-actions">
         <a href="#contacto" class="btn btn-primary btn-lg" id="hero-cta-btn">
           Cuéntanos tu evento
           <span class="btn-arrow">→</span>
         </a>
-        <a href="#servicios" class="btn btn-ghost btn-lg" id="hero-services-btn">
+        <a href="#servicios" class="btn btn-outline btn-lg" id="hero-services-btn">
           Ver servicios
         </a>
       </div>
+
       <div class="hero-stats">
         <div class="stat-item">
-          <span class="stat-number" data-target="320">0</span><span class="stat-suffix">+</span>
+          <div class="stat-number"><span data-target="320">0</span><span class="stat-suffix">+</span></div>
           <span class="stat-label">Eventos decorados</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
-          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+          <div class="stat-number"><span data-target="100">0</span><span class="stat-suffix">%</span></div>
           <span class="stat-label">Artesanal</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
-          <span class="stat-number" data-target="6">0</span><span class="stat-suffix">+</span>
+          <div class="stat-number"><span data-target="6">0</span><span class="stat-suffix">+</span></div>
           <span class="stat-label">Años de experiencia</span>
         </div>
       </div>
     </div>
+
     <div class="hero-scroll-indicator" id="scroll-indicator">
       <span>Descubre</span>
       <div class="scroll-line"></div>
@@ -104,15 +117,14 @@
 
   <!-- ===== TRUST ===== -->
   <section class="trust-section" id="trust">
-    <div class="container">
-      <p class="trust-label">Han confiado en nosotras</p>
+    <div class="container trust-inner">
+      <span class="trust-label">Han confiado en nosotras</span>
       <div class="trust-logos">
-        <span class="trust-logo">🌸 Bodas Reales</span>
-        <span class="trust-logo">🕊️ Villa Encanto</span>
-        <span class="trust-logo">🌿 Hacienda Verde</span>
-        <span class="trust-logo">✨ Salón Cristal</span>
-        <span class="trust-logo">🎀 La Casona</span>
-        <span class="trust-logo">🌷 Jardines Reales</span>
+        <span class="trust-logo">Villa Encanto</span>
+        <span class="trust-logo">Hacienda Verde</span>
+        <span class="trust-logo">Salón Cristal</span>
+        <span class="trust-logo">La Casona</span>
+        <span class="trust-logo">Jardines Reales</span>
       </div>
     </div>
   </section>
@@ -121,19 +133,20 @@
   <section class="section services-section" id="servicios">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">Nuestros Servicios</div>
-        <h2 class="section-title">Arte artesanal para<br /><span class="gradient-text">cada momento especial</span></h2>
-        <p class="section-subtitle">Desde un pequeño detalle hasta la decoración completa de tu celebración, todo hecho con amor y dedicación.</p>
+        <div class="section-eyebrow">Servicios</div>
+        <h2 class="section-title">Arte hecho a mano para<br /><em>cada momento especial</em></h2>
+        <p class="section-subtitle">Desde un pequeño detalle hasta la decoración completa de tu celebración, todo creado con amor y dedicación.</p>
       </div>
+
       <div class="services-grid">
 
         <div class="service-card" id="service-1">
-          <div class="service-icon">💍</div>
+          <div class="service-number">01</div>
           <h3>Detalles para Bodas</h3>
-          <p>Recuerdos artesanales únicos para regalar a tus invitados: jabones naturales, bolsitas aromáticas, tarros con miel, velas perfumadas y mucho más.</p>
+          <p>Recuerdos artesanales únicos para tus invitados: jabones naturales, bolsitas aromáticas, tarros personalizados, velas y mucho más.</p>
           <ul class="service-features">
             <li>Diseño totalmente personalizado</li>
-            <li>Etiquetas y packaging a medida</li>
+            <li>Packaging y etiquetas a medida</li>
             <li>Mínimo 30 unidades</li>
           </ul>
           <a href="#contacto" class="service-link" id="service-link-1">Solicitar presupuesto →</a>
@@ -141,9 +154,9 @@
 
         <div class="service-card featured" id="service-2">
           <div class="service-badge">Más solicitado</div>
-          <div class="service-icon">🌸</div>
+          <div class="service-number">02</div>
           <h3>Decoración de Mesas</h3>
-          <p>Centros de mesa, candelabros, arreglos florales secos, guirnaldas y ambientación completa para crear el ambiente que siempre soñaste.</p>
+          <p>Centros de mesa, candelabros, arreglos de flores secas, guirnaldas y ambientación completa para crear el ambiente que siempre soñaste.</p>
           <ul class="service-features">
             <li>Flores secas y preservadas</li>
             <li>Adaptado a tu paleta de color</li>
@@ -153,9 +166,9 @@
         </div>
 
         <div class="service-card" id="service-3">
-          <div class="service-icon">👶</div>
+          <div class="service-number">03</div>
           <h3>Bautizos y Comuniones</h3>
-          <p>Detalles artesanales dulces y tiernos para celebrar los grandes hitos de los más pequeños: bolsitas de almendras, figuritas, cajitas personalizadas.</p>
+          <p>Detalles artesanales dulces y tiernos para celebrar los grandes hitos de los más pequeños: bolsitas, figuritas y cajitas personalizadas.</p>
           <ul class="service-features">
             <li>Temáticas infantiles</li>
             <li>Colores a elegir</li>
@@ -165,9 +178,9 @@
         </div>
 
         <div class="service-card" id="service-4">
-          <div class="service-icon">🎂</div>
+          <div class="service-number">04</div>
           <h3>Cumpleaños y Aniversarios</h3>
-          <p>Decoración temática y detalles para celebraciones más íntimas: banners personalizados, centros de mesa, guirnaldas de tela y rincones de fotos.</p>
+          <p>Decoración temática y detalles para celebraciones íntimas: banners personalizados, centros, guirnaldas de tela y rincones de fotos.</p>
           <ul class="service-features">
             <li>Temáticas a medida</li>
             <li>Alquiler de atrezzo</li>
@@ -177,11 +190,11 @@
         </div>
 
         <div class="service-card" id="service-5">
-          <div class="service-icon">🎁</div>
+          <div class="service-number">05</div>
           <h3>Regalos Corporativos</h3>
-          <p>Detalles artesanales con la identidad de tu empresa para regalar en eventos, ferias o a clientes especiales. Packaging premium personalizado.</p>
+          <p>Detalles artesanales con la identidad de tu empresa para eventos, ferias o clientes especiales. Packaging premium personalizado.</p>
           <ul class="service-features">
-            <li>Logo y branding de tu empresa</li>
+            <li>Logo y branding incluidos</li>
             <li>Pedidos desde 50 unidades</li>
             <li>Envío a todo el país</li>
           </ul>
@@ -189,7 +202,7 @@
         </div>
 
         <div class="service-card" id="service-6">
-          <div class="service-icon">✨</div>
+          <div class="service-number">06</div>
           <h3>Evento Completo</h3>
           <p>Nos encargamos de todo: decoración del espacio, detalles para invitados, señalética artesanal, mesa dulce y ambientación floral integral.</p>
           <ul class="service-features">
@@ -208,17 +221,17 @@
   <section class="section about-section" id="nosotros">
     <div class="container about-grid">
       <div class="about-visual">
-        <div class="about-image-wrapper">
+        <div class="about-image-frame">
           <div class="about-image-placeholder">
             <div class="about-img-inner">
-              <span class="about-img-icon">🌸</span>
+              <span class="about-img-icon">🌿</span>
               <p>Nuestro taller artesanal</p>
             </div>
           </div>
           <div class="about-floating-card card-1">
-            <span class="card-icon">⭐</span>
+            <span class="card-icon">✦</span>
             <div>
-              <strong>5/5</strong>
+              <strong>5 / 5</strong>
               <small>Valoración media</small>
             </div>
           </div>
@@ -231,34 +244,37 @@
           </div>
         </div>
       </div>
+
       <div class="about-content">
-        <div class="section-tag">Nuestra historia</div>
-        <h2 class="section-title">Hechos con amor,<br />pensados para <span class="gradient-text">ti</span></h2>
+        <div class="section-eyebrow" style="justify-content:flex-start;">Nuestra historia</div>
+        <h2 class="section-title" style="text-align:left;">Hechos con amor,<br /><em>pensados para ti</em></h2>
         <p class="about-text">Momentos con Encanto nació del deseo de convertir cada celebración en algo verdaderamente especial. Somos un pequeño taller artesanal con más de 6 años de experiencia creando detalles únicos e irrepetibles.</p>
         <p class="about-text">Cada pieza que sale de nuestras manos está pensada con mimo y elaborada con materiales de primera calidad. Porque los momentos importantes merecen recuerdos a su altura.</p>
+
         <div class="about-values">
           <div class="value-item">
-            <span class="value-icon">✿</span>
+            <span class="value-number">I</span>
             <div>
-              <strong>100% artesanal</strong>
+              <strong>100 % artesanal</strong>
               <p>Cada detalle elaborado a mano con materiales naturales y sostenibles.</p>
             </div>
           </div>
           <div class="value-item">
-            <span class="value-icon">✿</span>
+            <span class="value-number">II</span>
             <div>
               <strong>Totalmente personalizado</strong>
               <p>Adaptamos colores, formas y mensajes a la esencia de tu celebración.</p>
             </div>
           </div>
           <div class="value-item">
-            <span class="value-icon">✿</span>
+            <span class="value-number">III</span>
             <div>
               <strong>Entrega con tiempo</strong>
               <p>Planificamos contigo para que todo esté listo sin sorpresas de última hora.</p>
             </div>
           </div>
         </div>
+
         <a href="#contacto" class="btn btn-primary" id="about-cta-btn">Hablemos de tu evento →</a>
       </div>
     </div>
@@ -268,9 +284,9 @@
   <section class="section gallery-section" id="galeria">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">Galería</div>
-        <h2 class="section-title">Momentos que<br /><span class="gradient-text">hemos creado</span></h2>
-        <p class="section-subtitle">Una pequeña muestra de algunos de nuestros trabajos más recientes.</p>
+        <div class="section-eyebrow">Galería</div>
+        <h2 class="section-title">Momentos que<br /><em>hemos creado</em></h2>
+        <p class="section-subtitle">Una muestra de nuestros trabajos más recientes.</p>
       </div>
       <div class="gallery-grid">
         <div class="gallery-item gallery-item-large" id="gallery-1">
@@ -278,45 +294,35 @@
             <span>💍</span>
             <p>Boda en jardín — Detalles naturales</p>
           </div>
-          <div class="gallery-overlay">
-            <span>Boda · Detalles artesanales</span>
-          </div>
+          <div class="gallery-overlay"><span>Boda · Detalles artesanales</span></div>
         </div>
         <div class="gallery-item" id="gallery-2">
           <div class="gallery-placeholder">
-            <span>🌸</span>
+            <span>🌿</span>
             <p>Decoración floral</p>
           </div>
-          <div class="gallery-overlay">
-            <span>Centros de mesa · Flores secas</span>
-          </div>
+          <div class="gallery-overlay"><span>Centros de mesa · Flores secas</span></div>
         </div>
         <div class="gallery-item" id="gallery-3">
           <div class="gallery-placeholder">
-            <span>👶</span>
-            <p>Bautizo azul</p>
+            <span>🕊️</span>
+            <p>Bautizo en lavanda</p>
           </div>
-          <div class="gallery-overlay">
-            <span>Bautizo · Detalles personalizados</span>
-          </div>
+          <div class="gallery-overlay"><span>Bautizo · Detalles personalizados</span></div>
         </div>
         <div class="gallery-item" id="gallery-4">
           <div class="gallery-placeholder">
-            <span>🎂</span>
+            <span>🕯️</span>
             <p>Aniversario íntimo</p>
           </div>
-          <div class="gallery-overlay">
-            <span>Aniversario · Decoración boho</span>
-          </div>
+          <div class="gallery-overlay"><span>Aniversario · Decoración minimalista</span></div>
         </div>
         <div class="gallery-item" id="gallery-5">
           <div class="gallery-placeholder">
             <span>🎁</span>
             <p>Packaging premium</p>
           </div>
-          <div class="gallery-overlay">
-            <span>Corporativo · Regalos a medida</span>
-          </div>
+          <div class="gallery-overlay"><span>Corporativo · Regalos a medida</span></div>
         </div>
       </div>
     </div>
@@ -326,15 +332,15 @@
   <section class="section testimonials-section" id="testimonios">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">Testimonios</div>
-        <h2 class="section-title">Lo que dicen las<br /><span class="gradient-text">parejas y familias</span></h2>
+        <div class="section-eyebrow">Testimonios</div>
+        <h2 class="section-title">Lo que dicen las<br /><em>parejas y familias</em></h2>
       </div>
       <div class="testimonials-grid">
         <div class="testimonial-card" id="testimonial-1">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Los detalles de nuestra boda fueron una auténtica obra de arte. Cada invitado se emocionó al ver su recuerdo personalizado. ¡Superaron todas nuestras expectativas!"</p>
+          <p class="testimonial-text">"Los detalles de nuestra boda fueron una auténtica obra de arte. Cada invitado se emocionó al ver su recuerdo personalizado. Superaron todas nuestras expectativas."</p>
           <div class="testimonial-author">
-            <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">LM</div>
+            <div class="author-avatar" style="background: hsl(268, 32%, 60%);">LM</div>
             <div>
               <strong>Laura & Miguel</strong>
               <span>Boda en Sevilla, Junio 2024</span>
@@ -345,7 +351,7 @@
           <div class="testimonial-stars">★★★★★</div>
           <p class="testimonial-text">"Encargué la decoración completa del bautizo de mi hija y fue mágico. Cada detalle estaba pensado con tanto cariño... El salón parecía sacado de un cuento de hadas."</p>
           <div class="testimonial-author">
-            <div class="author-avatar" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">SR</div>
+            <div class="author-avatar" style="background: hsl(272, 40%, 50%);">SR</div>
             <div>
               <strong>Sara Romero</strong>
               <span>Bautizo, Marzo 2025</span>
@@ -354,9 +360,9 @@
         </div>
         <div class="testimonial-card" id="testimonial-3">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Para los regalos corporativos de nuestra empresa no encontrábamos nada con personalidad. Momentos con Encanto lo resolvió todo: los clientes quedaron encantados."</p>
+          <p class="testimonial-text">"Para los regalos corporativos no encontrábamos nada con personalidad. Momentos con Encanto lo resolvió todo: los clientes quedaron absolutamente encantados."</p>
           <div class="testimonial-author">
-            <div class="author-avatar" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">CP</div>
+            <div class="author-avatar" style="background: hsl(41, 38%, 55%);">CP</div>
             <div>
               <strong>Carlos Pedraza</strong>
               <span>Director, Estudio Creativo CP</span>
@@ -370,12 +376,13 @@
   <!-- ===== CTA BANNER ===== -->
   <section class="cta-banner" id="cta-banner">
     <div class="cta-bg">
-      <div class="cta-orb cta-orb-1"></div>
-      <div class="cta-orb cta-orb-2"></div>
+      <div class="cta-circle cta-circle-1"></div>
+      <div class="cta-circle cta-circle-2"></div>
     </div>
     <div class="container cta-content">
-      <div class="cta-icon">✿</div>
-      <h2>¿Tienes una celebración<br /><span class="gradient-text-light">que hacer especial?</span></h2>
+      <div class="cta-eyebrow">Tu celebración nos espera</div>
+      <div class="cta-divider"></div>
+      <h2>¿Tienes un momento especial<br /><em>que hacer inolvidable?</em></h2>
       <p>Cuéntanos tu historia y crearemos juntas algo único e irrepetible.</p>
       <a href="#contacto" class="btn btn-white btn-lg" id="banner-cta-btn">
         Pide tu presupuesto gratis
@@ -388,46 +395,51 @@
   <section class="section contact-section" id="contacto">
     <div class="container contact-grid">
       <div class="contact-info">
-        <div class="section-tag">Contacto</div>
-        <h2 class="section-title">Cuéntanos tu<br /><span class="gradient-text">celebración</span></h2>
-        <p class="contact-subtitle">Rellena el formulario y te respondemos en menos de 24 h con una propuesta personalizada sin compromiso.</p>
+        <div class="section-eyebrow" style="justify-content:flex-start;">Contacto</div>
+        <h2 class="section-title" style="text-align:left;">Cuéntanos tu<br /><em>celebración</em></h2>
+        <p class="contact-subtitle">Rellena el formulario y te respondemos en menos de 24 h con una propuesta personalizada y sin compromiso.</p>
+
         <div class="contact-details">
           <div class="contact-detail-item">
-            <span class="detail-icon">📍</span>
+            <div class="detail-line"></div>
             <div>
               <strong>Taller</strong>
               <span>Tu ciudad, España</span>
             </div>
           </div>
           <div class="contact-detail-item">
-            <span class="detail-icon">📞</span>
+            <div class="detail-line"></div>
             <div>
               <strong>Teléfono / WhatsApp</strong>
               <span>+34 XXX XXX XXX</span>
             </div>
           </div>
           <div class="contact-detail-item">
-            <span class="detail-icon">✉️</span>
+            <div class="detail-line"></div>
             <div>
               <strong>Email</strong>
               <span>hola@momentosconencanto.es</span>
             </div>
           </div>
           <div class="contact-detail-item">
-            <span class="detail-icon">🕐</span>
+            <div class="detail-line"></div>
             <div>
               <strong>Respuesta</strong>
               <span>En menos de 24 horas</span>
             </div>
           </div>
         </div>
+
         <div class="social-links">
           <a href="#" class="social-btn" id="social-instagram" aria-label="Instagram">ig</a>
           <a href="#" class="social-btn" id="social-pinterest" aria-label="Pinterest">𝐏</a>
           <a href="#" class="social-btn" id="social-facebook" aria-label="Facebook">f</a>
         </div>
       </div>
+
       <div class="contact-form-wrapper">
+        <p class="form-title">Escríbenos</p>
+        <p class="form-subtitle">Cuéntanos cómo imaginas tu celebración.</p>
         <form class="contact-form" id="contact-form" novalidate>
           <div class="form-row">
             <div class="form-group">
@@ -447,12 +459,12 @@
             <label for="tipo-evento">Tipo de evento *</label>
             <select id="tipo-evento" name="tipo-evento" required>
               <option value="">Selecciona el tipo de evento</option>
-              <option value="boda">💍 Boda</option>
-              <option value="bautizo">👶 Bautizo</option>
-              <option value="comunion">🎊 Comunión</option>
-              <option value="cumpleanos">🎂 Cumpleaños / Aniversario</option>
-              <option value="corporativo">🎁 Evento corporativo</option>
-              <option value="otro">✨ Otro</option>
+              <option value="boda">Boda</option>
+              <option value="bautizo">Bautizo</option>
+              <option value="comunion">Comunión</option>
+              <option value="cumpleanos">Cumpleaños / Aniversario</option>
+              <option value="corporativo">Evento corporativo</option>
+              <option value="otro">Otro</option>
             </select>
           </div>
           <div class="form-row">
@@ -466,7 +478,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="mensaje">Cuéntanos tu sueño *</label>
+            <label for="mensaje">Tu sueño *</label>
             <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe cómo imaginas tu celebración, los colores que te gustan, alguna idea especial..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
@@ -474,7 +486,7 @@
             <span class="btn-arrow">→</span>
           </button>
           <div class="form-success" id="form-success" role="alert" aria-live="polite">
-            ✿ ¡Gracias! Hemos recibido tu consulta y te escribimos en menos de 24 h.
+            Gracias — hemos recibido tu consulta y te escribimos en menos de 24 h.
           </div>
         </form>
       </div>
@@ -486,8 +498,11 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="#" class="logo">
-          <span class="logo-icon">✿</span>
-          <span class="logo-text">Momentos <strong>con Encanto</strong></span>
+          <div class="logo-text-wrap">
+            <span class="logo-top">Momentos</span>
+            <div class="logo-dot">con</div>
+            <span class="logo-bottom">Encanto</span>
+          </div>
         </a>
         <p>Detalles artesanales y decoración personalizada para que cada celebración sea un recuerdo imborrable.</p>
       </div>
@@ -511,7 +526,7 @@
     <div class="footer-bottom">
       <div class="container">
         <span>© 2026 Momentos con Encanto. Todos los derechos reservados.</span>
-        <span>Hecho con ✿ y mucho cariño</span>
+        <span>Hecho con cariño en España</span>
       </div>
     </div>
   </footer>
