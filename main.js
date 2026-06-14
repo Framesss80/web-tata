@@ -159,22 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── 7. ACTIVE nav link highlight on scroll ───
-  const sections = document.querySelectorAll('section[id]');
-
-  const sectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      const id = entry.target.getAttribute('id');
-      const link = document.querySelector(`.nav-links a[href="#${id}"]`);
-      if (!link) return;
-      if (entry.isIntersecting) {
-        document.querySelectorAll('.nav-links a').forEach(a => a.style.color = '');
-        link.style.color = 'var(--color-primary)';
-      }
-    });
-  }, { threshold: 0.4 });
-
-  sections.forEach(s => sectionObserver.observe(s));
 
   // ── 8. HERO scroll indicator hide on scroll ──
   const scrollIndicator = document.getElementById('scroll-indicator');
