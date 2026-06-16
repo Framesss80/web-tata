@@ -6,162 +6,144 @@
   <title>Contacto · Momentos con Encanto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: var(--space-16);
+      align-items: start;
+    }
+    .contact-info {
+      padding-top: var(--space-4);
+    }
+    .contact-form {
+      background: var(--white);
+      padding: var(--space-10);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-6);
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+    .form-group label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--plum-dark);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .form-group input, .form-group textarea {
+      padding: 0.8rem;
+      border: 1px solid rgba(195,156,107,0.3);
+      border-radius: var(--radius-md);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color var(--ease-fast);
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      border-color: var(--plum-dark);
+    }
+    .contact-detail {
+      margin-bottom: var(--space-6);
+    }
+    .contact-detail h4 {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--gold-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: var(--space-1);
+    }
+    .contact-detail p {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+    }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body style="padding-top: var(--navbar-h);">
 
   <!-- ===== NAVBAR ===== -->
   <header class="navbar scrolled" id="navbar">
     <div class="container nav-inner">
-      <a href="index.html" class="logo" id="logo-link">
+      <a href="index.html" class="logo">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Logo" class="logo-img" style="border-radius:50%; object-fit:cover; width:50px; height:50px; opacity: 0.8;" />
         <div class="logo-text-wrap">
           <span class="logo-top">Momentos</span>
-          <div class="logo-dot">con</div>
-          <span class="logo-bottom">Encanto</span>
+          <span class="logo-bottom">con encanto</span>
         </div>
       </a>
-      <nav class="nav-links" id="nav-links" role="navigation" aria-label="Menú principal">
+      <nav class="nav-links" id="nav-links">
         <a href="index.html">Inicio</a>
         <a href="productos.html">Productos</a>
         <a href="nosotros.html">Nosotros</a>
         <a href="blog.html">Blog</a>
         <a href="contacto.html" class="active">Contacto</a>
       </nav>
-      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+      <button class="hamburger" id="hamburger-btn">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <!-- ===== CONTACTO ===== -->
-  <section class="section contact-section" style="min-height: 80vh;">
+  <section class="section">
     <div class="container contact-grid">
       <div class="contact-info">
-        <div class="section-eyebrow" style="justify-content:flex-start;">Contacto</div>
-        <h2 class="section-title" style="text-align:left;">Cuéntanos tu<br /><em>celebración</em></h2>
-        <p class="contact-subtitle">Rellena el formulario y te respondemos en menos de 24 h con una propuesta personalizada y sin compromiso.</p>
-
-        <div class="contact-details">
-          <div class="contact-detail-item">
-            <div class="detail-line"></div>
-            <div>
-              <strong>Taller</strong>
-              <span>Tu ciudad, España</span>
-            </div>
-          </div>
-          <div class="contact-detail-item">
-            <div class="detail-line"></div>
-            <div>
-              <strong>Teléfono / WhatsApp</strong>
-              <span>+34 600 000 000</span>
-            </div>
-          </div>
-          <div class="contact-detail-item">
-            <div class="detail-line"></div>
-            <div>
-              <strong>Email</strong>
-              <span>hola@momentosconencanto.es</span>
-            </div>
-          </div>
-          <div class="contact-detail-item">
-            <div class="detail-line"></div>
-            <div>
-              <strong>Respuesta</strong>
-              <span>En menos de 24 horas</span>
-            </div>
-          </div>
+        <div class="section-eyebrow" style="text-align: left; margin-bottom: var(--space-2);">¿HABLAMOS?</div>
+        <h2 class="section-title" style="text-align: left; margin-bottom: var(--space-8);">Contacto</h2>
+        
+        <div class="contact-detail">
+          <h4>Taller</h4>
+          <p>Tu ciudad, España</p>
         </div>
-
-        <div class="social-links">
-          <a href="#" class="social-btn" id="social-instagram" aria-label="Instagram">ig</a>
-          <a href="#" class="social-btn" id="social-pinterest" aria-label="Pinterest">𝐏</a>
-          <a href="#" class="social-btn" id="social-facebook" aria-label="Facebook">f</a>
+        <div class="contact-detail">
+          <h4>Email</h4>
+          <p>hola@momentosconencanto.es</p>
+        </div>
+        <div class="contact-detail">
+          <h4>Teléfono</h4>
+          <p>+34 600 000 000</p>
+        </div>
+        <div class="contact-detail" style="margin-top: var(--space-10);">
+          <h4>Síguenos en redes</h4>
+          <p>Instagram · Pinterest · Facebook</p>
         </div>
       </div>
 
-      <div class="contact-form-wrapper">
-        <p class="form-title">Escríbenos</p>
-        <p class="form-subtitle">Cuéntanos cómo imaginas tu celebración.</p>
-        <form class="contact-form" id="contact-form" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="nombre">Tu nombre *</label>
-              <input type="text" id="nombre" name="nombre" placeholder="María García" required />
-            </div>
-            <div class="form-group">
-              <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="tipo-evento">Tipo de evento *</label>
-            <select id="tipo-evento" name="tipo-evento" required>
-              <option value="">Selecciona el tipo de evento</option>
-              <option value="boda">Boda</option>
-              <option value="bautizo">Bautizo</option>
-              <option value="comunion">Comunión</option>
-              <option value="cumpleanos">Cumpleaños / Aniversario</option>
-              <option value="corporativo">Evento corporativo</option>
-              <option value="otro">Otro</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fecha">Fecha del evento</label>
-              <input type="date" id="fecha" name="fecha" />
-            </div>
-            <div class="form-group">
-              <label for="invitados">Nº de invitados aprox.</label>
-              <input type="number" id="invitados" name="invitados" placeholder="100" min="1" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Tu sueño *</label>
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe cómo imaginas tu celebración, los colores que te gustan, alguna idea especial..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
-            Enviar mi consulta
-            <span class="btn-arrow">→</span>
-          </button>
-          <div class="form-success" id="form-success" role="alert" aria-live="polite">
-            Gracias — hemos recibido tu consulta y te escribimos en menos de 24 h.
-          </div>
-        </form>
-      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="nombre">Tu nombre</label>
+          <input type="text" id="nombre" placeholder="María García" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Tu email</label>
+          <input type="email" id="email" placeholder="hola@tuemail.com" required />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Tu mensaje</label>
+          <textarea id="mensaje" rows="5" placeholder="Cuéntanos cómo imaginas tu evento..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self: flex-start; margin-top: var(--space-2);">ENVIAR MENSAJE</button>
+      </form>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">
-          <div class="logo-text-wrap">
-            <span class="logo-top">Momentos</span>
-            <div class="logo-dot">con</div>
-            <span class="logo-bottom">Encanto</span>
-          </div>
-        </a>
-        <p>Decoración de eventos y detalles artesanales hechos con amor, pensados para ti.</p>
-      </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <span>hola@momentosconencanto.es</span>
-          <span>+34 600 000 000</span>
-        </div>
-        <div class="footer-col">
-          <h4>Síguenos</h4>
-          <a href="#">Instagram</a>
-          <a href="#">Pinterest</a>
-          <a href="#">Facebook</a>
-        </div>
-      </div>
+  <!-- ===== FOOTER (Minimal) ===== -->
+  <footer style="border-top: 1px solid rgba(195,156,107,0.15); padding: var(--space-8) 0; margin-top: var(--space-12);">
+    <div class="container" style="text-align: center; font-size: 0.75rem; color: var(--text-light);">
+      Momentos con Encanto © 2026. Todos los derechos reservados.
     </div>
   </footer>
 

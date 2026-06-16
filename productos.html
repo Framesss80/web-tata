@@ -6,144 +6,89 @@
   <title>Productos · Momentos con Encanto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body style="padding-top: var(--navbar-h);">
+<body style="padding-top: calc(var(--navbar-h) + var(--space-8));">
 
   <!-- ===== NAVBAR ===== -->
   <header class="navbar scrolled" id="navbar">
     <div class="container nav-inner">
-      <a href="index.html" class="logo" id="logo-link">
+      <a href="index.html" class="logo">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Logo" class="logo-img" style="border-radius:50%; object-fit:cover; width:50px; height:50px; opacity: 0.8;" />
         <div class="logo-text-wrap">
           <span class="logo-top">Momentos</span>
-          <div class="logo-dot">con</div>
-          <span class="logo-bottom">Encanto</span>
+          <span class="logo-bottom">con encanto</span>
         </div>
       </a>
-      <nav class="nav-links" id="nav-links" role="navigation" aria-label="Menú principal">
+      <nav class="nav-links" id="nav-links">
         <a href="index.html">Inicio</a>
         <a href="productos.html" class="active">Productos</a>
         <a href="nosotros.html">Nosotros</a>
         <a href="blog.html">Blog</a>
         <a href="contacto.html">Contacto</a>
       </nav>
-      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+      <button class="hamburger" id="hamburger-btn">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <!-- ===== PRODUCTOS ===== -->
-  <section class="section products-section" style="min-height: 80vh;">
+  <section class="section">
     <div class="container">
       <div class="section-header">
-        <div class="section-eyebrow">Catálogo</div>
-        <h2 class="section-title">Todos los <em>productos</em></h2>
+        <div class="section-eyebrow">NUESTRA COLECCIÓN</div>
+        <h2 class="section-title">Productos</h2>
+        <p style="font-family: var(--font-sans); color: var(--text-mid); font-size: 0.85rem; margin-top: var(--space-2);">Detalles artesanales y decoración para cada momento especial.</p>
       </div>
 
-      <div class="products-grid">
-        <!-- Producto 1 -->
-        <a href="#" class="product-card reveal">
+      <div class="category-filters">
+        <button class="filter-btn active">TODOS</button>
+        <button class="filter-btn">BODAS</button>
+        <button class="filter-btn">MESAS</button>
+        <button class="filter-btn">BAUTIZOS</button>
+        <button class="filter-btn">CUMPLEAÑOS</button>
+      </div>
+
+      <div class="products-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <!-- 1 -->
+        <a href="producto-detalle.html" class="product-card">
           <div class="product-img-wrap">
-            <div class="product-placeholder" style="background: var(--plum-light);">🌿</div>
-            <span class="product-tag">Bodas</span>
+            <img src="https://images.unsplash.com/photo-1596433809252-260c27459eb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Detalle boda lavanda" />
           </div>
-          <div class="product-info">
-            <h3>Detalle de Boda Lavanda</h3>
-            <span class="product-price">Desde 3,50 €</span>
-          </div>
+          <span class="product-cat">BODAS</span>
+          <h3 class="product-title">Detalle de Boda Lavanda</h3>
+          <span class="product-price">Desde 3,50 €</span>
         </a>
 
-        <!-- Producto 2 -->
-        <a href="#" class="product-card reveal reveal-delay-1">
+        <!-- 2 -->
+        <a href="producto-detalle.html" class="product-card">
           <div class="product-img-wrap">
-            <div class="product-placeholder" style="background: var(--cream-deep);">🌸</div>
-            <span class="product-tag">Mesas</span>
+            <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Centro de Mesa Encanto" />
           </div>
-          <div class="product-info">
-            <h3>Centro de Mesa Encanto</h3>
-            <span class="product-price">Desde 65 €</span>
-          </div>
+          <span class="product-cat">MESAS</span>
+          <h3 class="product-title">Centro de Mesa Encanto</h3>
+          <span class="product-price">Desde 65 €</span>
         </a>
 
-        <!-- Producto 3 -->
-        <a href="#" class="product-card reveal reveal-delay-2">
+        <!-- 3 -->
+        <a href="producto-detalle.html" class="product-card">
           <div class="product-img-wrap">
-            <div class="product-placeholder" style="background: var(--lavender-soft);">🕯️</div>
-            <span class="product-tag">Bautizos</span>
+            <img src="https://images.unsplash.com/photo-1505322022379-7c3353ee6291?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Vela Bautizo Artesanal" />
           </div>
-          <div class="product-info">
-            <h3>Vela de Bautizo Artesanal</h3>
-            <span class="product-price">Desde 4,90 €</span>
-          </div>
-        </a>
-
-        <!-- Producto 4 -->
-        <a href="#" class="product-card reveal reveal-delay-3">
-          <div class="product-img-wrap">
-            <div class="product-placeholder" style="background: var(--gold-light);">🎂</div>
-            <span class="product-tag">Cumpleaños</span>
-          </div>
-          <div class="product-info">
-            <h3>Pack Cumpleaños Mágico</h3>
-            <span class="product-price">Desde 120 €</span>
-          </div>
-        </a>
-        
-        <!-- Producto 5 -->
-        <a href="#" class="product-card reveal">
-          <div class="product-img-wrap">
-            <div class="product-placeholder" style="background: var(--cream);">🍯</div>
-            <span class="product-tag">Bodas</span>
-          </div>
-          <div class="product-info">
-            <h3>Tarritos de Miel Artesanal</h3>
-            <span class="product-price">Desde 4,50 €</span>
-          </div>
-        </a>
-
-        <!-- Producto 6 -->
-        <a href="#" class="product-card reveal reveal-delay-1">
-          <div class="product-img-wrap">
-            <div class="product-placeholder" style="background: var(--plum-light);">🎀</div>
-            <span class="product-tag">Eventos</span>
-          </div>
-          <div class="product-info">
-            <h3>Guirnalda de Tela Rústica</h3>
-            <span class="product-price">Desde 25 €</span>
-          </div>
+          <span class="product-cat">BAUTIZOS</span>
+          <h3 class="product-title">Vela de Bautizo Artesanal</h3>
+          <span class="product-price">Desde 4,90 €</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">
-          <div class="logo-text-wrap">
-            <span class="logo-top">Momentos</span>
-            <div class="logo-dot">con</div>
-            <span class="logo-bottom">Encanto</span>
-          </div>
-        </a>
-        <p>Decoración de eventos y detalles artesanales hechos con amor, pensados para ti.</p>
-      </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <span>hola@momentosconencanto.es</span>
-          <span>+34 600 000 000</span>
-        </div>
-        <div class="footer-col">
-          <h4>Síguenos</h4>
-          <a href="#">Instagram</a>
-          <a href="#">Pinterest</a>
-          <a href="#">Facebook</a>
-        </div>
-      </div>
+  <!-- ===== FOOTER (Minimal) ===== -->
+  <footer style="border-top: 1px solid rgba(195,156,107,0.15); padding: var(--space-8) 0; margin-top: var(--space-12);">
+    <div class="container" style="text-align: center; font-size: 0.75rem; color: var(--text-light);">
+      Momentos con Encanto © 2026. Todos los derechos reservados.
     </div>
   </footer>
 
