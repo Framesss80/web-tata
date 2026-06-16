@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Momentos con Encanto — Decoración artesanal y detalles hechos a mano para bodas, bautizos y eventos especiales." />
   <title>Momentos con Encanto · Decoración artesanal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,10 +26,9 @@
         <a href="index.html" class="active">Inicio</a>
         <a href="productos.html">Productos</a>
         <a href="nosotros.html">Nosotros</a>
-        <a href="blog.html">Blog</a>
         <a href="contacto.html">Contacto</a>
       </nav>
-      <button class="hamburger" id="hamburger-btn">
+      <button class="hamburger" id="hamburger-btn" aria-label="Menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -49,8 +49,8 @@
           Creamos decoración y pequeños detalles hechos a mano para que cada evento sea único y tus invitados se lleven un recuerdo con encanto.
         </p>
         <div class="hero-actions">
-          <a href="productos.html" class="btn btn-primary">Ver productos</a>
-          <a href="contacto.html" class="btn btn-outline">Pedir presupuesto</a>
+          <a href="https://wa.me/34622225126?text=Hola%2C%20me%20gustar%C3%ADa%20ver%20vuestros%20productos" class="btn btn-primary" target="_blank" rel="noopener">Ver productos</a>
+          <a href="https://wa.me/34622225126?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20un%20presupuesto" class="btn btn-outline" target="_blank" rel="noopener">Pedir presupuesto</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -63,22 +63,85 @@
     </div>
   </section>
 
-  <!-- ===== CARACTERÍSTICAS ===== -->
+  <!-- ===== CARACTERÍSTICAS CON ICONOS SVG ===== -->
   <section class="features-section">
     <div class="container features-grid">
+      <!-- 1. Decoración de eventos — Globos -->
       <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Globos -->
+            <ellipse cx="24" cy="18" rx="8" ry="11" stroke="#3a2144" stroke-width="1.5" fill="none"/>
+            <ellipse cx="36" cy="16" rx="6" ry="9" stroke="#c39c6b" stroke-width="1.5" fill="none"/>
+            <ellipse cx="44" cy="20" rx="5" ry="8" stroke="#3a2144" stroke-width="1.2" fill="none" opacity="0.6"/>
+            <line x1="24" y1="29" x2="28" y2="48" stroke="#3a2144" stroke-width="1"/>
+            <line x1="36" y1="25" x2="30" y2="48" stroke="#c39c6b" stroke-width="1"/>
+            <line x1="44" y1="28" x2="32" y2="48" stroke="#3a2144" stroke-width="1" opacity="0.6"/>
+            <!-- Hojas decorativas -->
+            <path d="M18 38 Q14 34 10 38 Q14 42 18 38Z" fill="#7a8b6f" opacity="0.5"/>
+            <path d="M46 36 Q50 32 54 36 Q50 40 46 36Z" fill="#7a8b6f" opacity="0.5"/>
+          </svg>
+        </div>
         <h4>Decoración de eventos</h4>
         <p>Ambientes cuidados al detalle.</p>
       </div>
+
+      <!-- 2. Detalles artesanales — Regalo -->
       <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Caja regalo -->
+            <rect x="14" y="26" width="36" height="24" rx="2" stroke="#3a2144" stroke-width="1.5" fill="none"/>
+            <rect x="10" y="20" width="44" height="8" rx="2" stroke="#3a2144" stroke-width="1.5" fill="none"/>
+            <line x1="32" y1="20" x2="32" y2="50" stroke="#3a2144" stroke-width="1.5"/>
+            <!-- Lazo -->
+            <path d="M32 20 Q26 14 28 10 Q32 8 32 14" stroke="#c39c6b" stroke-width="1.5" fill="none"/>
+            <path d="M32 20 Q38 14 36 10 Q32 8 32 14" stroke="#c39c6b" stroke-width="1.5" fill="none"/>
+            <!-- Corazón en lazo -->
+            <path d="M30 12 Q30 10 32 11 Q34 10 34 12 Q34 14 32 15 Q30 14 30 12Z" fill="#c39c6b"/>
+            <!-- Hojas decorativas -->
+            <path d="M10 34 Q6 30 2 34 Q6 38 10 34Z" fill="#7a8b6f" opacity="0.5"/>
+            <path d="M54 34 Q58 30 62 34 Q58 38 54 34Z" fill="#7a8b6f" opacity="0.5"/>
+          </svg>
+        </div>
         <h4>Detalles artesanales</h4>
         <p>Pieza a pieza, hechos a mano.</p>
       </div>
+
+      <!-- 3. Recuerdos que perduran — Vela -->
       <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Vela -->
+            <rect x="20" y="22" width="24" height="30" rx="3" stroke="#c39c6b" stroke-width="1.5" fill="none"/>
+            <!-- Mecha -->
+            <line x1="32" y1="22" x2="32" y2="14" stroke="#3a2144" stroke-width="1.2"/>
+            <!-- Llama -->
+            <path d="M32 14 Q30 10 32 6 Q34 10 32 14Z" fill="#c39c6b" opacity="0.8"/>
+            <!-- Corazón en vela -->
+            <path d="M29 34 Q29 31 32 33 Q35 31 35 34 Q35 37 32 39 Q29 37 29 34Z" fill="#3a2144" opacity="0.3"/>
+            <!-- Hojas -->
+            <path d="M16 38 Q12 34 8 38 Q12 42 16 38Z" fill="#7a8b6f" opacity="0.5"/>
+            <path d="M48 38 Q52 34 56 38 Q52 42 48 38Z" fill="#7a8b6f" opacity="0.5"/>
+          </svg>
+        </div>
         <h4>Recuerdos que perduran</h4>
         <p>Para cada invitado especial.</p>
       </div>
+
+      <!-- 4. Hecho con amor — Corazón -->
       <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Corazón grande -->
+            <path d="M32 50 Q16 38 12 28 Q8 18 16 14 Q24 10 32 22 Q40 10 48 14 Q56 18 52 28 Q48 38 32 50Z" stroke="#3a2144" stroke-width="1.5" fill="none"/>
+            <!-- Hojas -->
+            <path d="M8 30 Q4 26 0 30 Q4 34 8 30Z" fill="#7a8b6f" opacity="0.5"/>
+            <path d="M56 30 Q60 26 64 30 Q60 34 56 30Z" fill="#7a8b6f" opacity="0.5"/>
+            <path d="M12 40 Q8 36 4 40 Q8 44 12 40Z" fill="#7a8b6f" opacity="0.4"/>
+            <path d="M52 40 Q56 36 60 40 Q56 44 52 40Z" fill="#7a8b6f" opacity="0.4"/>
+          </svg>
+        </div>
         <h4>Hecho con amor</h4>
         <p>Pensado para ti.</p>
       </div>
@@ -137,13 +200,72 @@
     </div>
   </section>
 
-  <!-- ===== CTA ===== -->
+  <!-- ===== CTA con botón dorado ===== -->
   <div class="container">
     <section class="cta-banner">
       <h2>¿Preparas un evento especial?</h2>
       <p>Cuéntanos tu idea y diseñamos una propuesta a medida con todo el encanto que mereces.</p>
-      <a href="contacto.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: white;">HABLEMOS</a>
+      <a href="https://wa.me/34622225126?text=Hola%2C%20quiero%20hablar%20sobre%20un%20evento%20especial" class="btn-cta-gold" target="_blank" rel="noopener">HABLEMOS</a>
     </section>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text-wrap">
+            <span class="logo-top">Momentos</span>
+            <span class="logo-bottom">con encanto</span>
+          </div>
+          <p>Creamos decoración artesanal y detalles hechos a mano para que cada evento sea único e inolvidable.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navegación</h5>
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <a href="https://wa.me/34622225126" target="_blank" rel="noopener">WhatsApp: 622 225 126</a>
+          <a href="mailto:hola@momentosconencanto.es">hola@momentosconencanto.es</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="aviso-legal.html">Aviso legal</a>
+          <a href="politica-privacidad.html">Política de privacidad</a>
+          <a href="politica-cookies.html">Política de cookies</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Momentos con Encanto. Todos los derechos reservados.</span>
+        <div class="footer-legal-links">
+          <a href="aviso-legal.html">Aviso legal</a>
+          <a href="politica-privacidad.html">Privacidad</a>
+          <a href="politica-cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOTANTE ===== -->
+  <a href="https://wa.me/34622225126?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20vuestros%20productos" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" id="whatsapp-float">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+      <path d="M16.004 0C7.164 0 .002 7.159.002 15.995c0 2.82.737 5.573 2.14 7.997L.013 32l8.208-2.148A15.95 15.95 0 0016.004 32C24.84 32 32 24.836 32 15.995 32 7.16 24.84 0 16.004 0zm0 29.39a13.37 13.37 0 01-6.824-1.872l-.49-.29-5.074 1.33 1.354-4.942-.318-.506A13.32 13.32 0 012.614 15.995c0-7.385 6.01-13.391 13.39-13.391 7.385 0 13.393 6.006 13.393 13.39 0 7.39-6.008 13.397-13.393 13.397zm7.338-10.023c-.402-.201-2.38-1.174-2.75-1.308-.37-.134-.64-.201-.91.201-.268.402-1.04 1.308-1.275 1.576-.235.268-.47.302-.872.1-.402-.2-1.698-.625-3.234-1.994-1.195-1.065-2.002-2.38-2.237-2.782-.235-.402-.025-.619.177-.82.181-.18.402-.469.603-.704.201-.235.268-.402.402-.67.134-.268.067-.503-.034-.704-.1-.201-.91-2.193-1.247-3.003-.328-.788-.661-.681-.91-.694-.235-.012-.503-.015-.771-.015-.268 0-.704.1-1.073.503-.37.402-1.41 1.377-1.41 3.36 0 1.983 1.444 3.899 1.645 4.167.201.268 2.84 4.334 6.88 6.076.961.415 1.712.662 2.297.848.965.307 1.843.264 2.537.16.774-.115 2.38-.973 2.716-1.912.335-.94.335-1.745.235-1.912-.1-.168-.37-.268-.771-.47z"/>
+    </svg>
+  </a>
+
+  <!-- ===== COOKIE BANNER ===== -->
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-text">
+      🍪 Utilizamos cookies propias y de terceros para mejorar tu experiencia de navegación. Puedes aceptarlas o rechazarlas. Más información en nuestra <a href="politica-cookies.html">Política de Cookies</a>.
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-btn cookie-btn-reject" id="cookie-reject">RECHAZAR</button>
+      <button class="cookie-btn cookie-btn-accept" id="cookie-accept">ACEPTAR</button>
+    </div>
   </div>
 
   <script src="main.js"></script>

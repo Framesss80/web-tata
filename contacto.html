@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contacta con Momentos con Encanto para presupuestos personalizados de decoración artesanal." />
   <title>Contacto · Momentos con Encanto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,9 +16,7 @@
       gap: var(--space-16);
       align-items: start;
     }
-    .contact-info {
-      padding-top: var(--space-4);
-    }
+    .contact-info { padding-top: var(--space-4); }
     .contact-form {
       background: var(--white);
       padding: var(--space-10);
@@ -27,49 +26,25 @@
       flex-direction: column;
       gap: var(--space-6);
     }
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-2);
-    }
+    .form-group { display: flex; flex-direction: column; gap: var(--space-2); }
     .form-group label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--plum-dark);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+      font-size: 0.75rem; font-weight: 600; color: var(--plum-dark);
+      letter-spacing: 0.1em; text-transform: uppercase;
     }
     .form-group input, .form-group textarea {
-      padding: 0.8rem;
-      border: 1px solid rgba(195,156,107,0.3);
-      border-radius: var(--radius-md);
-      font-family: var(--font-sans);
-      font-size: 0.9rem;
-      outline: none;
-      transition: border-color var(--ease-fast);
+      padding: 0.8rem; border: 1px solid rgba(195,156,107,0.3);
+      border-radius: var(--radius-md); font-family: var(--font-sans);
+      font-size: 0.9rem; outline: none; transition: border-color var(--ease-fast);
     }
-    .form-group input:focus, .form-group textarea:focus {
-      border-color: var(--plum-dark);
-    }
-    .contact-detail {
-      margin-bottom: var(--space-6);
-    }
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--plum-dark); }
+    .contact-detail { margin-bottom: var(--space-6); }
     .contact-detail h4 {
-      font-family: var(--font-sans);
-      font-size: 0.7rem;
-      font-weight: 600;
-      color: var(--gold-accent);
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      margin-bottom: var(--space-1);
+      font-family: var(--font-sans); font-size: 0.7rem; font-weight: 600;
+      color: var(--gold-accent); text-transform: uppercase;
+      letter-spacing: 0.15em; margin-bottom: var(--space-1);
     }
-    .contact-detail p {
-      font-size: 0.95rem;
-      color: var(--text-mid);
-    }
-    @media (max-width: 768px) {
-      .contact-grid { grid-template-columns: 1fr; }
-    }
+    .contact-detail p { font-size: 0.95rem; color: var(--text-mid); }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body style="padding-top: var(--navbar-h);">
@@ -79,21 +54,15 @@
     <div class="container nav-inner">
       <a href="index.html" class="logo">
         <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Logo" class="logo-img" style="border-radius:50%; object-fit:cover; width:50px; height:50px; opacity: 0.8;" />
-        <div class="logo-text-wrap">
-          <span class="logo-top">Momentos</span>
-          <span class="logo-bottom">con encanto</span>
-        </div>
+        <div class="logo-text-wrap"><span class="logo-top">Momentos</span><span class="logo-bottom">con encanto</span></div>
       </a>
       <nav class="nav-links" id="nav-links">
         <a href="index.html">Inicio</a>
         <a href="productos.html">Productos</a>
         <a href="nosotros.html">Nosotros</a>
-        <a href="blog.html">Blog</a>
         <a href="contacto.html" class="active">Contacto</a>
       </nav>
-      <button class="hamburger" id="hamburger-btn">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menú"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -113,8 +82,8 @@
           <p>hola@momentosconencanto.es</p>
         </div>
         <div class="contact-detail">
-          <h4>Teléfono</h4>
-          <p>+34 600 000 000</p>
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/34622225126" target="_blank" rel="noopener" style="color: var(--gold-accent);">622 225 126</a></p>
         </div>
         <div class="contact-detail" style="margin-top: var(--space-10);">
           <h4>Síguenos en redes</h4>
@@ -122,7 +91,7 @@
         </div>
       </div>
 
-      <form class="contact-form">
+      <form class="contact-form" id="contact-form">
         <div class="form-group">
           <label for="nombre">Tu nombre</label>
           <input type="text" id="nombre" placeholder="María García" required />
@@ -135,17 +104,27 @@
           <label for="mensaje">Tu mensaje</label>
           <textarea id="mensaje" rows="5" placeholder="Cuéntanos cómo imaginas tu evento..." required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" style="align-self: flex-start; margin-top: var(--space-2);">ENVIAR MENSAJE</button>
+        <button type="submit" class="btn btn-primary" style="align-self: flex-start; margin-top: var(--space-2);">ENVIAR POR WHATSAPP</button>
       </form>
     </div>
   </section>
 
-  <!-- ===== FOOTER (Minimal) ===== -->
-  <footer style="border-top: 1px solid rgba(195,156,107,0.15); padding: var(--space-8) 0; margin-top: var(--space-12);">
-    <div class="container" style="text-align: center; font-size: 0.75rem; color: var(--text-light);">
-      Momentos con Encanto © 2026. Todos los derechos reservados.
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><div class="logo-text-wrap"><span class="logo-top">Momentos</span><span class="logo-bottom">con encanto</span></div><p>Creamos decoración artesanal y detalles hechos a mano para que cada evento sea único e inolvidable.</p></div>
+        <div class="footer-col"><h5>Navegación</h5><a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a></div>
+        <div class="footer-col"><h5>Contacto</h5><a href="https://wa.me/34622225126" target="_blank" rel="noopener">WhatsApp: 622 225 126</a><a href="mailto:hola@momentosconencanto.es">hola@momentosconencanto.es</a></div>
+        <div class="footer-col"><h5>Legal</h5><a href="aviso-legal.html">Aviso legal</a><a href="politica-privacidad.html">Política de privacidad</a><a href="politica-cookies.html">Política de cookies</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Momentos con Encanto. Todos los derechos reservados.</span><div class="footer-legal-links"><a href="aviso-legal.html">Aviso legal</a><a href="politica-privacidad.html">Privacidad</a><a href="politica-cookies.html">Cookies</a></div></div>
     </div>
   </footer>
+
+  <a href="https://wa.me/34622225126" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.004 0C7.164 0 .002 7.159.002 15.995c0 2.82.737 5.573 2.14 7.997L.013 32l8.208-2.148A15.95 15.95 0 0016.004 32C24.84 32 32 24.836 32 15.995 32 7.16 24.84 0 16.004 0zm0 29.39a13.37 13.37 0 01-6.824-1.872l-.49-.29-5.074 1.33 1.354-4.942-.318-.506A13.32 13.32 0 012.614 15.995c0-7.385 6.01-13.391 13.39-13.391 7.385 0 13.393 6.006 13.393 13.39 0 7.39-6.008 13.397-13.393 13.397zm7.338-10.023c-.402-.201-2.38-1.174-2.75-1.308-.37-.134-.64-.201-.91.201-.268.402-1.04 1.308-1.275 1.576-.235.268-.47.302-.872.1-.402-.2-1.698-.625-3.234-1.994-1.195-1.065-2.002-2.38-2.237-2.782-.235-.402-.025-.619.177-.82.181-.18.402-.469.603-.704.201-.235.268-.402.402-.67.134-.268.067-.503-.034-.704-.1-.201-.91-2.193-1.247-3.003-.328-.788-.661-.681-.91-.694-.235-.012-.503-.015-.771-.015-.268 0-.704.1-1.073.503-.37.402-1.41 1.377-1.41 3.36 0 1.983 1.444 3.899 1.645 4.167.201.268 2.84 4.334 6.88 6.076.961.415 1.712.662 2.297.848.965.307 1.843.264 2.537.16.774-.115 2.38-.973 2.716-1.912.335-.94.335-1.745.235-1.912-.1-.168-.37-.268-.771-.47z"/></svg>
+  </a>
 
   <script src="main.js"></script>
 </body>
