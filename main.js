@@ -96,8 +96,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   statNumbers.forEach(el => counterObserver.observe(el));
 
-  // ── 5. CONTACT FORM → WhatsApp redirect ─────
+  // ── 5. CONTACT FORM → Email submission ─────
   const form = document.getElementById('contact-form');
+  const formStatus = document.getElementById('form-status-msg');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -106,13 +107,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = document.getElementById('email');
       const mensaje = document.getElementById('mensaje');
 
-      let text = 'Hola, me contacto desde la web Momentos con Encanto.';
-      if (nombre && nombre.value) text += '\nNombre: ' + nombre.value;
-      if (email && email.value) text += '\nEmail: ' + email.value;
-      if (mensaje && mensaje.value) text += '\nMensaje: ' + mensaje.value;
+      let subject = encodeURIComponent('Consulta Web - Momentos con Encanto');
+      let bodyText = `Hola,\n\nHas recibido una nueva consulta de la web:\n\nNombre: ${nombre?.value || ''}\nEmail: ${email?.value || ''}\nMensaje: ${mensaje?.value || ''}\n\nUn saludo.`;
+      
+      const mailtoUrl = `mailto:hola@momentosconencanto.es?subject=${subject}&body=${encodeURIComponent(bodyText)}`;
+      
+      // Open mail app
+      window.location.href = mailtoUrl;
 
-      const waUrl = 'https://wa.me/34622225126?text=' + encodeURIComponent(text);
-      window.open(waUrl, '_blank');
+      if (formStatus) {
+        formStatus.style.display = 'block';
+        setTimeout(() => {
+          formStatus.style.display = 'none';
+        }, 5000);
+      }
+      form.reset();
     });
   }
 
