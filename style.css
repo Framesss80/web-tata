@@ -162,8 +162,11 @@
      gap: var(--space-3);
    }
    .logo-img {
-     height: 50px;
+     height: 80px;
      width: auto;
+   }
+   .footer-logo {
+     height: 120px;
    }
    .logo-text-wrap {
      display: flex;
